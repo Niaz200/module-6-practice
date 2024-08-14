@@ -1,0 +1,90 @@
+SELECT * FROM users
+
+
+SELECT `firstName`,email,`lastname` FROM users
+
+SELECT a.firstName,a.lastName FROM users a 
+
+
+SELECT * FROM users INNER JOIN categories ON users.id=categories.user_id
+
+SELECT users.`firstName`,categories.name FROM users INNER JOIN categories ON users.id=categories.user_id
+
+SELECT users.`firstName`,users.mobile,users.email, categories.name, categories.updated_at FROM users INNER JOIN categories ON users.id=categories.user_id
+
+
+SELECT a.`firstName`,a.mobile,a.email, b.name, b.updated_at FROM users a INNER JOIN categories b ON a.id=b.user_id
+
+
+SELECT a.`firstName`,a.mobile,a.email, b.name, b.updated_at FROM users a LEFT JOIN categories b ON a.id=b.user_id
+
+SELECT * FROM categories RIGHT JOIN users ON categories.user_id=users.id
+
+FULL OUTER JOIN
+================
+
+SELECT a.`firstName`,a.mobile,a.email, b.name, b.updated_at FROM users a LEFT JOIN categories b ON a.id=b.user_id
+
+UNION ALL
+
+SELECT a.`firstName`,a.mobile,a.email, b.name, b.updated_at FROM users a RIGHT JOIN categories b ON a.id=b.user_id
+
+
+cross joint
+===========
+
+SELECT * FROM users CROSS JOIN categories
+
+
+invoices
+========
+
+SELECT * FROM invoices
+
+
+SELECT a.payable FROM invoices a
+
+
+
+-- a=invoices, b=customers
+
+SELECT a.payable,b.name FROM invoices a
+LEFT JOIN customers b ON a.customer_id=b.id
+
+
+-- a=invoices, b=customers, c=users
+
+SELECT a.payable,b.name, c.email FROM invoices a
+LEFT JOIN customers b ON a.customer_id=b.id
+LEFT JOIN users c ON a.user_id=c.id
+
+
+-- a=invoices, b=customers, c=users, d=invoice_products, 
+
+SELECT a.payable,b.name, c.email, d.qty FROM invoices a
+LEFT JOIN customers b ON a.customer_id=b.id
+LEFT JOIN users c ON a.user_id=c.id
+LEFT JOIN invoice_products d ON a.id=d.invoice_id
+
+
+-- a=invoices, b=customers, c=users, d=invoice_products, e=products
+
+SELECT a.payable,b.name, c.email, d.qty, e.name FROM invoices a
+LEFT JOIN customers b ON a.customer_id=b.id
+LEFT JOIN users c ON a.user_id=c.id
+LEFT JOIN invoice_products d ON a.id=d.invoice_id
+LEFT JOIN products e ON d.product_id=e.id
+
+
+
+
+-- a=invoices, b=customers, c=users, d=invoice_products, e=products, categories=f
+
+SELECT a.payable,b.name, c.email, d.qty, e.name, f.name FROM invoices a
+LEFT JOIN customers b ON a.customer_id=b.id
+LEFT JOIN users c ON a.user_id=c.id
+LEFT JOIN invoice_products d ON a.id=d.invoice_id
+LEFT JOIN products e ON d.product_id=e.id
+LEFT JOIN categories f ON e.category_id=f.id
+
+

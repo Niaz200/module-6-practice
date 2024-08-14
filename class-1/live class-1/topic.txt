@@ -1,0 +1,17 @@
+
+লাইভ ক্লাস
+
+২৯ অক্টো, রাত ৯:০০
+
+Fundamentals of Database Structures and SQL Queries
+
+টপিক:
+One-to-One (1:1), One-to-Many (1:N),Only-One-to-Many (1:N), Many-to-Many (N:M), Self-Referencing Relationship | 
+SQL inner join, left join, right join  | Details on Database, Tables, Columns, Properties | 
+SQL Query writing select, delete, insert, update | Grouping, Sorting, Limiting | SQL Aggregator Functions
+
+নোট: 
+
+Details on Database, Tables, Columns, Properties | SQL Query writing select, delete, insert, update |
+ Grouping, Sorting, Limiting | SQL Aggregator Functions. লাইভ ক্লাসে জয়েন করে, এই টপিকগুলো সম্পর্কে শিখে নিন।
+ যদি কোনো কারণে ক্লাসটি মিস করে ফেলেন, অবশ্যই ক্লাস রেকর্ডিং টি দেখে নিবেন। কারণ ক্লাসে ডিস্কাস করা টপিকগুলো থেকেও পরবর্তীতে আপনাদের এসাইনমেন্ট, এক্সাম দেয়া হয়ে থাকে।

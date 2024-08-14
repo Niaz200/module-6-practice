@@ -1,0 +1,12 @@
+
+লাইভ ক্লাস
+
+৩১ অক্টো, রাত ৯:৪৫
+
+SQL Join Types and Relationship Models: Best Practices
+
+নোট: 
+
+SQL inner join, left join, right join | One-to-One (1:1), One-to-Many (1:N),Only-One-to-Many (1:N), 
+Many-to-Many (N:M), Self-Referencing Relationship | SQL best practices. লাইভ ক্লাসে জয়েন করে, এই টপিকগুলো সম্পর্কে শিখে নিন। 
+যদি কোনো কারণে ক্লাসটি মিস করে ফেলেন, অবশ্যই ক্লাস রেকর্ডিং টি দেখে নিবেন। কারণ ক্লাসে ডিস্কাস করা টপিকগুলো থেকেও পরবর্তীতে আপনাদের এসাইনমেন্ট, এক্সাম দেয়া হয়ে থাকে।
